@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>BODY, атрибут bgcolor</title>
+    <meta charset="UTF-8">
+    <title>Все кандидаты</title>
+</head>
+<body bgcolor="#A0BEC4">
+<h1><strong>Все кандидаты</strong></h1>
+
+    {% for candidate in candidates %}
+        <p><a href="/ candidates /{{ candidate.id }}">{{ candidate.name }}</a></p>
+    {% endfor %}
+
+</body>
+</html>
+
